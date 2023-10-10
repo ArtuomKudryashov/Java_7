@@ -3,12 +3,15 @@ import hW.HW_13_2.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static hW.HW_13_2.add;
+
 public class HW_13_2Test {
     HW_13_2 hw_13_2 = new HW_13_2();
 
     @Test
     public void testAdd(){
-         int  result = hw_13_2.add(5,10);
+
+         int  result = add(5,10);
         Assert.assertEquals(result, 15);
 
     }
@@ -26,8 +29,8 @@ public class HW_13_2Test {
     }
     @Test
     public void testDiv(){
-        double result = hw_13_2.div(5,0);
-        Assert.assertEquals(result, 0.5);
+        double result = hw_13_2.div(5,1);
+        Assert.assertEquals(result, 5);
 
     }
 }
